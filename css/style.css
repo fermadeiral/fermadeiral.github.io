@@ -53,14 +53,19 @@ h2 {	font-size: 14px; }
 .github { background: url('../icons/github-icon.jpg') left 3px no-repeat; }
 .dblp { background: url('../icons/dblp-icon.jpg') top left no-repeat; }
 .google-citations { background: url('../icons/google-citations-icon.jpg') left 3px no-repeat; }
+.lattes { background: url('../icons/lattes-icon.jpg') left 3px no-repeat; }
 
-.teaching-section ul li ul {
+.teaching-section ul li ul, .service-section ul li ul {
 	list-style: disc;
 	padding-top: 12px;
 	padding-left: 18px;
 }
 
-.header-section ul, .education-section ul, .experience-section ul, .teaching-section ul {
+.teaching-section ul li ul li, .service-section ul li ul li {
+    margin-bottom: 5px;
+}
+
+.header-section ul, .education-section ul, .experience-section ul, .teaching-section ul, .service-section ul {
 	list-style: none;
 	padding: 0;
 }
