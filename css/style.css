@@ -177,7 +177,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     margin-bottom: 5px;
 }
 
-.profile-section ul, .service-section ul, .teaching-section ul, .education-section ul, .experience-section ul {
+.profile-section ul, .students-section ul, .service-section ul, .teaching-section ul, .education-section ul, .experience-section ul {
 	list-style: none;
 	padding: 0;
 }
