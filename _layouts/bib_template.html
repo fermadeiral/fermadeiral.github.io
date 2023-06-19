@@ -1,0 +1,36 @@
+<style>
+    table {
+        font-size: 18px;
+    }
+    
+    table,
+    td {
+        border: 0px;
+        border-collapse: collapse;
+        padding-left: 0;
+    }
+</style>
+<div class="refs-row">
+    <table>
+        <tr>
+            {% if entry.abbrv %}
+            <td width="120" valign="top"><span class="abbrv">{{entry.abbrv}}</span></td>
+            {% endif %}
+            <td>
+                <div class="reference">
+                    {{ reference }}
+                </div>
+
+                {% if entry.open_access_pdf %} <span class="refs-link"><a href="{{entry.open_access_pdf}}" target="_blank">PDF</a></span> &middot; {% endif %}
+
+                <span class="refs-link"><a href="javascript:void(0)" onclick="$('#bibtex-entry-{{key}}').slideToggle();">BibTeX</a></span> {% if entry.tool %} &middot; <span class="refs-link"><a href="{{entry.tool}}" target="_blank">Tool</a></span> {%
+                endif %} {% if entry.dataset %} &middot; <span class="refs-link"><a href="{{entry.dataset}}" target="_blank">Dataset</a></span> {% endif %} {% if entry.experiments %} &middot; <span class="refs-link"><a href="{{entry.experiments}}" target="_blank">Experiments</a></span>                {% endif %} {% if entry.artifacts %} &middot; <span class="refs-link"><a href="{{entry.artifacts}}" target="_blank">Artifacts</a></span> {% endif %}
+
+                <div class="bibtex noshow" style="width:600px;overflow:auto">
+                    <pre class="bibtex-entry" id="bibtex-entry-{{key}}" style="display: none;">{{ entry.bibtex }}</pre>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</div>

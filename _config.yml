@@ -265,6 +265,8 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll/scholar
+
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
@@ -273,6 +275,28 @@ whitelist:
   - jekyll-feed
   - jemoji
 
+# scholar
+scholar:
+  style: assets/bib.csl
+  locale: en
+  order: descending
+  sort_by: year, month
+
+  source: ./_bibliography
+  bibliography: references.bib
+  bibliography_template: bib_template
+
+  bibliography_list_tag: 'div'
+  bibliography_item_tag: 'span'
+
+  bibliography_list_attributes:
+    reversed: "reversed"
+
+  replace_strings: true
+  join_strings:    true
+  
+  bibtex_skip_fields: [code, data, tool, pdf, slides, poster, abbrv, month, month_numeric, acceptance, pubcls, pubtype]
+  repository: papers
 
 # Archives
 #  Type
