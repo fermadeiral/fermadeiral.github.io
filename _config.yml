@@ -81,10 +81,10 @@ analytics:
 # Site Author
 author:
   name             : "Fernanda Madeiral"
-  avatar           : "/fernanda_madeiral_square.jpg"
+  avatar           : "/IMG_8864_square.jpeg"
   bio              : "Assistant Professor in Software Engineering, Computer Science"
-  location         : #"Amsterdam, The Netherlands"
-  employer         : "Vrije Universiteit Amsterdam"
+  location         : 
+  employer         : 
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=Jqy0cu0AAAAJ"
   email            : "fer.madeiral@gmail.com"
@@ -265,6 +265,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
+
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
@@ -273,6 +274,28 @@ whitelist:
   - jekyll-feed
   - jemoji
 
+# scholar
+scholar:
+  style: assets/bib.csl
+  locale: en
+  order: descending
+  sort_by: year, month
+
+  source: ./_bibliography
+  bibliography: references.bib
+  bibliography_template: bib_template
+
+  bibliography_list_tag: 'div'
+  bibliography_item_tag: 'span'
+
+  bibliography_list_attributes:
+    reversed: "reversed"
+
+  replace_strings: true
+  join_strings:    true
+  
+  bibtex_skip_fields: [code, data, tool, pdf, slides, poster, abbrv, month, month_numeric, acceptance, pubcls, pubtype]
+  repository: papers
 
 # Archives
 #  Type

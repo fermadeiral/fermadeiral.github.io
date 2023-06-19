@@ -5,9 +5,16 @@ title: "Teaching"
 author_profile: true
 ---
 
-## As a guest lecturer
+## As a lecturer/coordinator at Universidade Federal de Pernambuco (Brazil)
 
-- Data Structures and Algorithms (undergraduate), VU Amsterdam (The Netherlands), 2022, Course responsible: Katja Tuma
+- Introduction to Programming (undergraduate in Computer Science and Information Systems), 2025, with Sérgio Soares and Ricardo Massa
+
+## As a lecturer/coordinator at VU Amsterdam (Netherlands)
+
+- Software Engineering Processes (undergraduate), 2022/2023 and 2023/2024, with Claudia Raibulet
+- Data Structures and Algorithms (undergraduate), 2022/2023 and 2023/2024, with Katja Tuma
+- Security and Safety Engineering (undergraduate), 2022/2023, with Fabio Massacci
+- Software Threat Analysis (graduate), 2022/2023 and 2023/2024, with Katja Tuma
 
 ## As a TA
 
